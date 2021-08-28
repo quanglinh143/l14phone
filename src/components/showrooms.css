@@ -1,0 +1,135 @@
+.showroom-container{
+    width: 100%;
+    
+}
+.showroom{
+    display: flex;
+    width: 100%;
+    padding: 0 160px;
+    margin-top: 20px;
+    min-height: 80vh;
+    margin-bottom: 500px;
+}
+.showroom-left--title{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 18px 0 8px 0;
+}
+
+.showroom-left{
+    
+    width: 70%;
+    min-height: 80vh;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    
+}
+.showroom-left--img img{
+    border-radius: 5px;
+}
+
+.showroom-left--ul{
+    display: flex;
+    
+}
+.showroom-left--ul---left{
+    width: 48%;
+}
+.showroom-left--ul---right{
+    width: 48%;
+    margin-left: 2%;
+}
+.showroom-left--ul---left li {
+    list-style-type: circle;
+    color: #000;
+    text-decoration: none;
+}
+.showroom-left--ul---right li {
+    list-style-type: circle;
+    color: #000;
+    text-decoration: none;
+}
+
+.showroom-left--img{
+    width: 100%;
+    position: relative;
+}
+.showroom-left--img img{
+    width: 100%;
+}
+.showroom-left--logo{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+
+}
+.showroom-right{
+    
+    
+    width: 29%;
+    height: 40vh;
+    margin-left: 1%;
+    position: sticky;
+    top: 80px;
+    right: 0;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+.showroom-right--contact{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    
+}
+.showroom-right--switchboard {
+    color: red;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showroom-right--switchboard span{
+    font-size: 20px;
+    color: #000;
+}
+.showroom-right--sale{
+    font-size: 14px;
+    font-weight: 600;
+}
+.showroom-right--sale span{
+    color: rgb(99, 99, 233);
+   
+}
+.showroom-right--handShake{
+    font-size: 20px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    
+}
+.showroom-right--handShake span{
+    
+    color: #444;
+    
+}
+.showroom-right--sale--company{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.ml-20{
+    margin-left: 40px;
+}
+
+

@@ -1,0 +1,197 @@
+.example-container{
+    display: flex;
+    margin-top: 17px;
+    justify-content: center;
+    margin-top: 70px;
+ 
+}
+.example-slide{
+    width: 700px;
+
+}
+.example-navbar{
+    height: 375px;
+}
+.example-navbar{
+    width: 204px;
+    height: 375px;
+    /* background-color: rgb(199, 199, 199); */
+    box-sizing: border-box;
+    position: relative;
+
+}
+.example-navbar-ul{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+
+}
+
+.example-link{
+    text-decoration: none; 
+}
+
+.example-navbar-li{
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+   
+}
+
+
+.example-product-icon{
+    width: 40px;
+    height: calc(400px/12);
+    padding-left: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* .example-navbar-li div{
+    width: calc(100%-60px); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.example-navbar-li:hover{
+    cursor: pointer;
+    background-color: rgb(199, 199, 199);
+
+}
+
+.example-hover-phone{
+    width: 204px;
+    height: 366px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 204px;
+    z-index: 99;
+    display: none;
+}
+.example-link:hover .example-hover-phone{
+    display: block;
+}
+.example-hover-phone--ul{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.example-hover-phone--li{
+    width: 100%;
+    height: 33.4px;
+    display: flex;
+    padding-left: 6px;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+.example-hover-phone--li:hover{
+    background-color: rgb(199, 199, 199) ;
+    
+}
+.example-products{
+    display: flex;
+
+    align-items: center;
+    width: 160px;
+    padding-left: 6px;
+    
+}
+
+.example-hover-laptop{
+    width: 204px;
+    height: 366px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 204px;
+    z-index: 99;
+    display: none;
+}
+.example-link:hover .example-hover-laptop{
+    display: block;
+}
+.example-hover-laptop--ul{
+    margin: 0;
+    padding: 0; 
+    
+}
+
+.example-hover-laptop--li{
+    width: 100%;
+    height: 33.3px;
+    display: flex;
+    padding-left: 6px;
+    align-items: center;
+    
+}
+.example-hover-laptop--li:hover{
+    background-color: rgb(199, 199, 199) ;
+    
+}
+/* tablet */
+.example-hover-tablet{
+    width: 204px;
+    height: 366px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 204px;
+    z-index: 99;
+    display: none;
+}
+.example-link:hover .example-hover-tablet{
+    display: block;
+}
+.example-hover-tablet--ul{
+    margin: 0;
+    padding: 0; 
+    
+}
+
+.example-hover-tablet--li{
+    width: 100%;
+    height: 33.2px;
+    display: flex;
+    padding-left: 6px;
+    align-items: center;
+    
+}
+.example-hover-tablet--li:hover{
+    background-color: rgb(199, 199, 199) ;
+    
+}
+
+/* mainRight */
+.show-img--img{
+    width: 265px;
+    height: 115px;
+    margin-bottom: 10.8px;
+    cursor: pointer;
+}
+
+.example-slide{
+    margin: -9px 18px;
+}
+.example-icon{
+    width: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.banner{
+    margin-left: 244px;
+    cursor: pointer;
+}
+
