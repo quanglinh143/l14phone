@@ -12,6 +12,7 @@ import Linkprd from "./products/Linkprd";
 import Footer from './footer/Footer';
 import {FaArrowCircleUp} from "react-icons/fa";
 import { Link } from 'react-scroll';
+import Loading from './loading/Loading';
 function App() {
   const [data,setData]=useState([]);
   const dataObject=Object.values(data);
@@ -80,7 +81,7 @@ function App() {
   }
   
   useEffect(()=>{
-    fetch(`http://localhost:3000/phone`)
+    fetch(`https://data-phone.herokuapp.com/api/phone`)
     .then((res)=>{
       return res.json()
     })
@@ -155,13 +156,7 @@ function App() {
         }))
 
       }
-      
-
-      
-
-      
-      
-      
+          
     }
    
     
@@ -214,6 +209,8 @@ function App() {
         <Route path="/sp/:name"  render={()=><Linkprd dataHasBeenProcessed={dataHasBeenProcessed} product={products} onAddCart={onAddCart}/>} />
         <Route path="/brand/:title" render={()=><Brand />}/>
         <Route path="/showrooms" render={()=><Showrooms />}/>
+        <div className="appLoading"> <Route path="/Loading" render={()=><Loading />}/></div>
+       
         <Route path="*" render={()=><Notfound />} />
       </Switch>
       <Link className="dropdown" to="navbarid" smooth={true} duration={600}>{scrollDown?<div className="scroll"><FaArrowCircleUp/></div>:""}</Link>

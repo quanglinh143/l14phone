@@ -1,6 +1,5 @@
 .example-container{
     display: flex;
-    margin-top: 17px;
     justify-content: center;
     margin-top: 70px;
  
@@ -194,4 +193,170 @@
     margin-left: 244px;
     cursor: pointer;
 }
+@media screen and (max-width: 1450px){
+    .banner{
+        width: 100%;
+        margin: 0 110px;
+    }
+}
+@media screen and (max-width: 1325px){
+    .banner{
+        width: 100%;
+        margin: 0 54px;
+    }
+}
+@media screen and (max-width: 1270px){
+    .banner{
+        width: 100%;
+        margin: 0 27px;
+    }
+}
+@media screen and (max-width: 1220px){
+    .banner{
+        width: 100%;
+        margin: 0 16px;
+    }
+}
+@media screen and (max-width: 1220px){
+    .banner{
+        width: 100%;
+        margin: 0 ;
+    }
+}
+@media screen and (max-width: 1165px){
+    .banner{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px){
+    .banner{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+}
 
+
+/* responsive <=768 */
+@media screen and (max-width: 855px){
+    .banner{
+        width: 100%;
+        margin: 0;
+    }
+    .banner img{
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width: 770px){
+    .banner{
+        width: 100%;
+        margin: 0;
+    }
+    .banner img{
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width: 750px){
+    .example-navbar-ul{
+        width: 240px;
+    }
+    .example-container{
+        display:flex;
+        
+        flex-direction:column;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .example-navbar{
+        position: relative;
+    }
+    .show-img{
+        position: absolute;
+        top: 80px;
+        right: 0;
+    }
+    .example-slide{
+        width: 100%;
+        margin: 0 ;
+        
+    }
+    .example-container{
+        display:flex;
+        
+        flex-direction:column;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .example-navbar{
+        position: relative;
+    }
+    .show-img{
+        position: absolute;
+        top: 80px;
+        right: 0;
+    }
+    .example-slide{
+        width: 100%;
+        margin: 0 ;
+        
+    }
+    .banner{
+        width: 100%;
+        margin: 0;
+    }
+    .banner img{
+        width: 100%;
+        
+    }
+    .example-container{
+        display:flex;
+        
+        flex-direction:column;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .example-navbar{
+        position: relative;
+    }
+    .show-img{
+        position: absolute;
+        top: 80px;
+        right: 0;
+    }
+    .example-slide{
+        width: 100%;
+        margin: 0 ;
+        
+    }
+}
+@media screen and (max-width: 632px) {
+    
+    .example-container{
+        display:flex;
+        
+        flex-direction:column;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .example-navbar{
+        position: relative;
+    }
+    .show-img{
+        position: absolute;
+        top: 80px;
+        right: 0;
+    }
+    .example-slide{
+        width: 100%;
+        margin: 0 ;
+        
+    }
+   
+    
+}

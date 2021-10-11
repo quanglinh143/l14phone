@@ -1,36 +1,109 @@
-.footer{
-    min-height: 300px;
-    background: #333;
-    color: #fff;
+.footer-container{
+    font-family: Century Gothic Std,Arial,sans-serif;
     display: flex;
+    justify-content: center;
     width: 100%;
+    height: 350px;
+    background-color: rgb(36, 35, 35);
+    
 }
-
 .footer-left{
+    flex: 1; 
     display: flex;
-    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-top: -40px;
+  
+}
+.footer-left--title{
+    margin-bottom: 6px;
+}
+.footer-center{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: -40px;
     
-    padding-top: 40px;
-    width: 50%;
 }
-.footer-left-a{
-    margin-left: 90px;
+.footer-center a{
+    margin-bottom: 8px;
+    color: #fff !important;
 }
-.footer-left-b{
-    margin-left: 150px;
-}
-ul{
-    padding: 0;
-    margin: 0;
-    margin-top: 10px;
-    
+.footer-center a:hover{
+    font-weight: 600;
 }
 .footer-right{
-    width: 50%;
-    padding-top: 40px;
-    width: 30%;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    color: #fff;
+}
+.footer-left-search{
+    display: flex;
+}
+.footer-left-search input{
+    width: 270px;
+    height: 100%;
+    border: 1px solid #b4b4b4; 
+    border-top-left-radius:24px ;
+    border-bottom-left-radius:24px ;
+    outline: none;
+    padding-left: 20px;
+    
     
 }
-ul{
-    list-style: none;
+.footer-left-search input::placeholder{
+   color: red;
+   
+   
+    
+    
+}
+.footer-left-search button{
+    width: 50px;
+    height: 44px;
+    
+    font-weight: 400;
+    background-color: #9b9b9b;
+    color: #fff;
+    border: 1px solid #b4b4b4;
+    border-top-right-radius:24px ;
+    border-bottom-right-radius:24px ;
+    outline: none;
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+     
+}
+
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+}
+.footer-center a{
+    color: #444;
+}
+
+.footer-right span{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.footer-right div{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-right div span{
+    cursor: pointer;
 }

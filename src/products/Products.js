@@ -4,11 +4,14 @@ import StarRatings from "react-star-ratings";
 import {Link} from "react-router-dom";
 import {Button} from "reactstrap";
 const Products = ({dataHasBeenProcessed,onAddItem,searchTerm}) => {
-    console.log(searchTerm)
+    // console.log("searchTerm:",searchTerm)
+    // console.log("searchTerm68:",typeof searchTerm)
+    // console.log("dataHasBeenProcessed:",dataHasBeenProcessed)
+    // console.log("dataHasBeenProcessed:",typeof dataHasBeenProcessed)
     return (
         <div className="products-container">
             {dataHasBeenProcessed.map((item,index)=>{
-                console.log(item)
+                console.log("dataHasBeenProcessed",item)
                 const titleProducts=item.selection.toUpperCase(); 
                 const showprd=(item)=>{
                     onAddItem(item)

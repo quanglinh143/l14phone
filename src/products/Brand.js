@@ -10,6 +10,7 @@ const Brand = ({dataHasBeenProcessed}) => {
     console.log(dataHasBeenProcessed);
     const [data,setData]=useState([]);
     let {title}=useParams();
+    console.log("TITLE",title);
     let titleParams= title.replace(/\s/g, '');
     useEffect(()=>{
         fetch(`http://localhost:3000/${titleParams}`)
@@ -19,7 +20,7 @@ const Brand = ({dataHasBeenProcessed}) => {
         .then((resJson)=>{
           setData(resJson);
         })
-      },[]);
+      },[title]);
 
       console.log(data);
       console.log(titleParams);

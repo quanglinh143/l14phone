@@ -69,6 +69,8 @@ const Example = (props) => {
       </CarouselItem>
     );
   });
+
+  
   
   return (
       <>
@@ -84,8 +86,8 @@ const Example = (props) => {
                 <div className="example-hover-phone">
                     <ul className="example-hover-phone--ul">
                       <Link to="/brand/apple" className="example-hover-phone--li">Apple</Link>
-                      <Link to="/brand/samsung" className="example-hover-phone--li">Samsung</Link>
-                      <Link to="/brand/xiaomi" className="example-hover-phone--li">Xiaomi</Link>
+                      <Link to="/brand/samsung"  className="example-hover-phone--li">Samsung</Link>
+                      <Link to="/brand/xiaomi"  className="example-hover-phone--li">Xiaomi</Link>
                       <Link to="/brand/oppo" className="example-hover-phone--li">Oppo</Link>
                     </ul>
                 </div>

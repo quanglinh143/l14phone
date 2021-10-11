@@ -127,9 +127,125 @@
     font-weight: 500;
     display: flex;
     justify-content: center;
+    margin-top: 6px;
 }
 .ml-20{
     margin-left: 40px;
+   
+    
+   
+}
+@media screen and (max-width: 1118px){
+    .showroom-left{
+        width: 70%;
+    }
+    .showroom-right{
+        width: 29%;
+        margin-left: 1%;
+        box-sizing: border-box;
+        height: 334px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .showroom{
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 855px) {
+    .showroom{
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width: 780px) {
+    .showroom{
+        width: 100%;
+        padding: 0;
+    }
+    .showroom-right{
+        width: 29%;
+        margin-left: 1%;
+        box-sizing: border-box;
+        height: 354px;
+    }
+    
+}
+@media screen and (max-width: 735px) {
+    .showroom{
+        width: 100%;
+        padding: 0;
+    }
+    .showroom-right{
+        width: 29%;
+        margin-left: 1%;
+        box-sizing: border-box;
+        height: 374px;
+    }
+    
+}
+@media screen and (max-width: 710px) {
+    .showroom{
+        width: 100%;
+        padding: 0;
+    }
+    .showroom-right{
+        width: 29%;
+        margin-left: 1%;
+        box-sizing: border-box;
+        
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .showroom{
+        width: 100%;
+        padding: 0;
+    }
+    .showroom-right{
+        width: 29%;
+        margin-left: 1%;
+        box-sizing: border-box;
+        
+    }
+    
+}
+@media screen and (max-width: 690px) {
+    .showroom{
+        width: 100%;
+        padding: 0;
+    }
+    .showroom-right{
+        width: 29%;
+        margin-left: 1%;
+        box-sizing: border-box;
+        height: 404px;
+    }
+    
+}
+@media screen and (max-width: 640px) {
+    
+    .showroom-right{
+        width: 29%;
+        margin-left: 1%;
+        box-sizing: border-box;
+        
+    }
+    
+}
+@media screen and (max-width: 630px) {
+    
+    .showroom-right{
+        width: 29%;
+        margin-left: 1%;
+        box-sizing: border-box;
+        height: 424px;
+        
+    }
+    
 }
 
 

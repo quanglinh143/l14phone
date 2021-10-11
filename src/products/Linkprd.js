@@ -3,7 +3,8 @@ import { useParams } from "react-router";
 import { useState,useRef } from "react";
 import "./linkprd.css";
 import {Button} from "reactstrap";
-import {FaGift,FaCartPlus} from "react-icons/fa"
+import {FaGift,FaCartPlus} from "react-icons/fa";
+import Slick from "../slider/Slick";
 const Linkprd = ({ dataHasBeenProcessed,product,onAddCart }) => {
   let { name } = useParams();
   let arrProduct = [];
@@ -59,7 +60,7 @@ const Linkprd = ({ dataHasBeenProcessed,product,onAddCart }) => {
       }
     }
   }
-
+  console.log("productsName:",productName);
 
   function isEmptyObject(obj) {
     return JSON.stringify(obj) === "{}";
@@ -67,12 +68,12 @@ const Linkprd = ({ dataHasBeenProcessed,product,onAddCart }) => {
   
   const products = { ...productName };
   const capacities = isEmptyObject(products) ? "" : Object.values(products.capacities);
-  console.log(capacities);
+  console.log("capacities",capacities);
   
-  console.log(products);
+  console.log("products:", products);
   // const tkmk = isEmptyObject(products) ? "" : Object.values(products.tskt);
   const thongso=isEmptyObject(products) ? "" : Object.values(products.tskt);
-  console.log(thongso)
+  console.log("thongso",thongso)
   
   const vnd_special_price=String(price).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
   // console.log(showCapacities[2])
@@ -110,7 +111,8 @@ const Linkprd = ({ dataHasBeenProcessed,product,onAddCart }) => {
     <>
     <div className="linkprd-container">
       <div className="linkprd-img">
-        <img src={isEmptyObject(products) ?  "" : products.image} />
+        {/* <img src={isEmptyObject(products) ?  "" : products.image} /> */}
+        <Slick products={products}/>
         
       </div>
       <div className="linkprd-columns">
@@ -152,7 +154,7 @@ const Linkprd = ({ dataHasBeenProcessed,product,onAddCart }) => {
                   })}
 
           </div>
-          <div className="link-promotion-colimns">
+          <div className="link-promotion-columns">
             <div className="link-promotion">
               <div className="link-promotion-gift">
                 <FaGift/>Khuyến mại
@@ -176,7 +178,7 @@ const Linkprd = ({ dataHasBeenProcessed,product,onAddCart }) => {
 
       <div className="pay"> <div className="pay-text">* Thanh toán online</div> <span className="pay-span">|</span> <div className="pay-text">Miễn phí giao hàng thu tiền</div></div>
         <div className="promotion-member">
-            * Giảm thêm tới 1% cho <span>thành viên Smember</span>
+            * Giảm thêm tới 1% cho <span>thành viên L14member</span>
           </div>
           <Button onClick={onPayNow} outline color="danger" className="pay-now"><div style={{fontSize:"18px",fontWeight:"500"}}>MUA NGAY</div><span>(Giao tận nơi hoặc lấy tại cửa hàng)</span></Button>
           <div className="pay-options">
