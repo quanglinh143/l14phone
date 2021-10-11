@@ -80,7 +80,7 @@ function App() {
   }
   
   useEffect(()=>{
-    fetch(`http://localhost:3000/phone`)
+    fetch(`https://data-phone.herokuapp.com/api/phone`)
     .then((res)=>{
       return res.json()
     })
