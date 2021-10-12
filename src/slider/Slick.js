@@ -47,7 +47,7 @@ export default function Slick({products}) {
         dotsClass="slick-dots custom-indicator"
       >
         {products.images === undefined ? (
-          <div>Đợi tí..</div>
+          <div>Loading</div>
         ) : (
             products.images.map((item) => (
             <div key={item}>

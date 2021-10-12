@@ -1,4 +1,8 @@
-
+.loader-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #090909;
+}
 .loader{
     position: absolute;
     top: 50%;

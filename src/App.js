@@ -15,6 +15,7 @@ import { Link } from 'react-scroll';
 import Loading from './loading/Loading';
 function App() {
   const [data,setData]=useState([]);
+  const [loading,setLoading]=useState(false)
   const dataObject=Object.values(data);
   const [addItems,setAddItems]=useState([]);
   const [searchTerm,setSearchTearm]=useState("");
@@ -87,6 +88,9 @@ function App() {
     })
     .then((resJson)=>{
       setData(resJson);
+      setTimeout(() => {
+        setLoading(true);
+      }, 1000);
     })
   },[]);
   
@@ -197,26 +201,28 @@ function App() {
 
 
   return (
+     <>
      
-    <div className="App">
-      <div id="navbarid">
-      <Navbar  addItems={addItems} minusItems={minusItems} plusItems={plusItems} removeItem={removeItem} onChangeInput={onChangeInput}/>
-      </div>
-      
-      <Example/>
-      <Switch>
-        <Route path="/" exact render={()=><Products searchTerm={searchTerm} dataHasBeenProcessed={dataHasBeenProcessed} onAddItem={onAddItem}/>}/>
-        <Route path="/sp/:name"  render={()=><Linkprd dataHasBeenProcessed={dataHasBeenProcessed} product={products} onAddCart={onAddCart}/>} />
-        <Route path="/brand/:title" render={()=><Brand />}/>
-        <Route path="/showrooms" render={()=><Showrooms />}/>
-        <div className="appLoading"> <Route path="/Loading" render={()=><Loading />}/></div>
-       
-        <Route path="*" render={()=><Notfound />} />
-      </Switch>
-      <Link className="dropdown" to="navbarid" smooth={true} duration={600}>{scrollDown?<div className="scroll"><FaArrowCircleUp/></div>:""}</Link>
-      <div style={{marginTop:"100px"}}><Footer/></div>
-      
-    </div>
+      {loading?<div className="App">
+        <div id="navbarid">
+        <Navbar  addItems={addItems} minusItems={minusItems} plusItems={plusItems} removeItem={removeItem} onChangeInput={onChangeInput}/>
+        </div>
+        
+        <Example/>
+        <Switch>
+          <Route path="/" exact render={()=><Products searchTerm={searchTerm} dataHasBeenProcessed={dataHasBeenProcessed} onAddItem={onAddItem}/>}/>
+          <Route path="/sp/:name"  render={()=><Linkprd dataHasBeenProcessed={dataHasBeenProcessed} product={products} onAddCart={onAddCart}/>} />
+          <Route path="/brand/:title" render={()=><Brand />}/>
+          <Route path="/showrooms" render={()=><Showrooms />}/>
+          {/* <div className="appLoading"> <Route path="/loading" render={()=><Loading />}/></div> */}
+        
+          <Route path="*" render={()=><Notfound />} />
+        </Switch>
+        <Link className="dropdown" to="navbarid" smooth={true} duration={600}>{scrollDown?<div className="scroll"><FaArrowCircleUp/></div>:""}</Link>
+        <div style={{marginTop:"100px"}}><Footer/></div>
+        
+      </div>:<Loading/>}
+     </>
      
   );
 }
