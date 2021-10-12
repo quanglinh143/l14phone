@@ -13,7 +13,7 @@ const Brand = ({dataHasBeenProcessed}) => {
     console.log("TITLE",title);
     let titleParams= title.replace(/\s/g, '');
     useEffect(()=>{
-        fetch(`http://localhost:3000/${titleParams}`)
+        fetch(`https://dataphim.herokuapp.com/api/phim?fbclid=IwAR0Vxq2XsbKOe840BOWDokU9YGqqJi15SO77YwwFJkMpkD7hVRr4ChSbOEw/${titleParams}`)
         .then((res)=>{
           return res.json()
         })
